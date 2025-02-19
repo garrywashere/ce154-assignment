@@ -1,0 +1,73 @@
+<!-- 2405164 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta charset for proper encoding -->
+        <meta charset="UTF-8" />
+        <!-- Viewport settings for responsive design across different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Page title displayed in the browser tab -->
+        <title>Photographer Portfolio</title>
+        <!-- Link to external CSS file for styling -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Header section containing the logo and navigation links -->
+        <header>
+            <div class="logo">Photographer</div>
+            <!-- Website logo -->
+            <nav>
+                <!-- Navigation links to different pages of the site -->
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="basket.html">Basket</a>
+            </nav>
+        </header>
+
+        <!-- Hero section displaying a large background image with an 'Explore' button -->
+        <section class="hero">
+            <!-- Hero image with an alt text link to the image source -->
+            <img
+                src="images/hero.jpg"
+                alt="Photo by Pixabay: https://www.pexels.com/photo/dock-under-cloudy-sky-in-front-of-mountain-206359/"
+            />
+            <!-- Button that scrolls to the 'overview' section when clicked -->
+            <button
+                onclick="document.querySelector('.overview').scrollIntoView({behavior: 'smooth'})"
+            >
+                Explore
+            </button>
+        </section>
+
+        <!-- Overview section with a welcome message and description -->
+        <section class="overview">
+            <h2>Welcome to my Photography Portfolio</h2>
+            <!-- Heading for the overview -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                bibendum ex ut aliquam laoreet. Aliquam ac vulputate lorem.
+                Donec euismod eget ante eu consectetur. Cras odio felis,
+                ultrices vel elit ac, aliquam volutpat dolor. Mauris eget
+                hendrerit elit. Phasellus laoreet suscipit ex, et blandit erat
+                vehicula quis. Etiam vitae neque ultricies velit ornare placerat
+                in elementum tortor. Mauris non magna diam. Proin ac ornare
+                ante.
+            </p>
+            <!-- Description text -->
+        </section>
+
+        <!-- Footer section with copyright text and social media links -->
+        <footer>
+            <p>&copy; 2025 Photographer. All rights reserved.</p>
+            <!-- Copyright statement -->
+            <div class="social-links">
+                <!-- Social media links (currently placeholders) -->
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+            </div>
+        </footer>
+    </body>
+</html>

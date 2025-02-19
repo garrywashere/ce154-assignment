@@ -1,0 +1,198 @@
+/* 2405164 */
+
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif; /* Set default font */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark gray text color */
+    margin: 0; /* Remove default body margin */
+    height: 100%; /* Ensure body takes up full height */
+}
+
+/* Header styles */
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    padding: 20px; /* Add padding inside the header */
+    background-color: #111; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+/* Logo styles */
+header .logo {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold logo text */
+}
+
+/* Navigation link styles */
+header nav a {
+    color: #fff; /* White text color for nav links */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between links */
+    font-size: 16px; /* Set font size for nav links */
+}
+
+/* Hover effect for navigation links */
+header nav a:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #111; /* Dark background color for footer */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding inside the footer */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out items */
+}
+
+/* Social links styles in the footer */
+footer .social-links a {
+    color: #fff; /* White text color for social links */
+    margin-left: 15px; /* Space between social links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for social links */
+footer .social-links a:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Hero section styles (full-screen background section) */
+.hero {
+    position: relative; /* Positioning context for absolute elements inside */
+    height: 100vh; /* Full viewport height */
+    background-image: url("hero-image.jpg"); /* Background image for hero section */
+    background-size: cover; /* Make the background image cover the whole area */
+    background-position: center; /* Center the background image */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Image inside hero section */
+.hero img {
+    max-height: 100%; /* Ensure the image does not exceed the section height */
+    max-width: 100%; /* Ensure the image does not exceed the section width */
+}
+
+/* Button styles */
+button {
+    background-color: #111; /* Dark background color for button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Change cursor to pointer when hovered */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #333; /* Change background color on hover */
+}
+
+/* Overview section styles */
+.overview {
+    text-align: center; /* Center align text */
+    padding: 50px; /* Add padding around the content */
+    background-color: #f4f4f4; /* Light gray background color */
+}
+
+/* About and item details section layout */
+.about,
+.item-details {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out content */
+    padding: 50px; /* Add padding inside the sections */
+}
+
+/* Text section inside the 'about' section */
+.about .text {
+    width: 60%; /* Take up 60% of the width */
+}
+
+/* Image section inside the 'about' section */
+.about .photo img {
+    width: 30%; /* Image takes up 30% of the width */
+}
+
+/* Gallery section styles */
+.gallery {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    gap: 20px; /* Space between grid items */
+    padding: 50px; /* Add padding inside the gallery */
+}
+
+/* Image inside the gallery items */
+.photo-item img {
+    width: 100%; /* Make the image take up the entire item width */
+}
+
+/* Overlay text style in the gallery items */
+.photo-item p {
+    text-align: center; /* Center the text */
+    position: absolute; /* Absolute position for overlay text */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Correct alignment */
+    font-size: 20px; /* Text size */
+    color: #fff; /* White text color */
+}
+
+/* Item details section styles */
+.item-details {
+    padding: 50px; /* Add padding inside the section */
+}
+
+/* Image inside item details */
+.item-image img {
+    width: 100%; /* Image takes up the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Item information section styles */
+.item-info {
+    width: 50%; /* Takes up 50% of the width */
+    padding: 0 20px; /* Horizontal padding inside the section */
+}
+
+/* Pricing text in item info */
+.item-info .pricing p {
+    margin-top: 10px; /* Add space between elements */
+}
+
+/* Basket section styles */
+.basket {
+    padding: 50px; /* Add padding inside the section */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out items */
+}
+
+/* Individual item in the basket */
+.basket-items .item {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 20px; /* Space between basket items */
+}
+
+/* Image inside the basket item */
+.basket-items .item img {
+    width: 50px; /* Set image size */
+    height: 50px; /* Set image size */
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Price summary section styles */
+.price-summary {
+    width: 30%; /* Takes up 30% of the width */
+    padding: 20px; /* Add padding inside the section */
+    background-color: #f4f4f4; /* Light gray background */
+}
